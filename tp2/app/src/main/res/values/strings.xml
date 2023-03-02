@@ -12,4 +12,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="user_information">User Information</string>
+    <string name="logout">Logout</string>
 </resources>

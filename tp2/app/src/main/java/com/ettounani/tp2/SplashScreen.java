@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 public class SplashScreen extends AppCompatActivity {
     // Variable
@@ -26,7 +25,7 @@ public class SplashScreen extends AppCompatActivity {
             // This method will be executed once the timer is over
             // Start your app main activity
                 Intent i = new Intent(SplashScreen.this,
-                        MainActivity.class);
+                        LoginActivity.class);
                 startActivity(i);
             // close this activity
                 finish();
