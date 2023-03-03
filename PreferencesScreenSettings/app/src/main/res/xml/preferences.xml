@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Informations de la mise en veille">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="veille"
+            android:title="Mise en veille"
+            android:summary="Mettre le téléphone en veille"/>
+        <ListPreference
+            android:defaultValue="20"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"
+            android:key="veille_intervale"
+            android:title="la durée de la mise en veille"
+            android:dependency="veille"
+            android:summary="Déterminer la durrée après laquelle l'appareil se mettra en veille"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Information personnelle">
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="full_name"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:title="Nom complet"
+            android:dialogTitle="Entrez votre nom complet"
+            android:dialogMessage="Entrez votre nom complet svp"
+
+            android:summary="Entrez votre nom complet qui sera utilisé dans l'application"
+            android:inputType="textCapWords"/>
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="email_address"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Adresse email"
+            android:dialogTitle="Entrez votre adresses email"
+            android:dialogMessage="Entrez votre adresse email"
+            android:summary="Entrez votre adresse email institutionnelle"
+
+            android:inputType="textEmailAddress"/>
+    </PreferenceCategory>
+</PreferenceScreen>
