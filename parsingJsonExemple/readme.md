@@ -5,9 +5,13 @@
 <td>
 <img src="UI/i1.png">
 </td>
+</tr>
+<tr>
 <td>
 <img src="UI/i2.png">
 </td>
+</tr>
+<tr>
 <td>
 <img src="UI/i3.png">
 </td>
