@@ -52,8 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 model.setId(id);
                 model.setName(first_name + " " + last_name);
                 model.setJob(job);
+                /*
                 model.setEmail(email);
-                model.setPhone(phone);
+                model.setPhone(phone);*/
                 arrayList.add(model);
             }
         } catch (JSONException e) {
@@ -126,19 +127,19 @@ public class MainActivity extends AppCompatActivity {
             TextView name, job, email, phone;
             name = (TextView) convertView.findViewById(R.id.txt_name);
             job = (TextView) convertView.findViewById(R.id.txt_job);
-            email = (TextView) convertView.findViewById(R.id.txt_email);
-            phone = (TextView) convertView.findViewById(R.id.txt_phone);
+           /* email = (TextView) convertView.findViewById(R.id.txt_email);
+            phone = (TextView) convertView.findViewById(R.id.txt_phone);*/
             Button callbtn = (Button) convertView.findViewById(R.id.btn_call);
 
             name.setText(arrayList.get(position).getName());
             job.setText(arrayList.get(position).getJob());
-            email.setText(arrayList.get(position).getEmail());
+       /*     email.setText(arrayList.get(position).getEmail());
             phone.setText(arrayList.get(position).getPhone());
-
+*/
             final ItemModel temp = arrayList.get(position);
 
 
-            callbtn.setOnClickListener(new View.OnClickListener() {
+           /* callbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Uri telephone = Uri.parse("tel:" + temp.getPhone());
@@ -147,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
-
+*/
             return convertView;
         }
     }

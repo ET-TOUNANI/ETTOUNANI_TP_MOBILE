@@ -8,21 +8,33 @@
    >
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="93dp"
+            android:layout_height="71dp"
+            app:srcCompat="@drawable/profile" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:orientation="vertical"
-            android:layout_marginLeft="20dp">
+            android:translationY="@android:dimen/dialog_min_width_major">
 
             <TextView
                 android:id="@+id/txt_name"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Name"
                 android:textColor="#1D1B1B"
@@ -38,40 +50,19 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txt_phone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="#0F68B6"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txt_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="#BA312F2F"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:paddingBottom="10dp"/>
-
         </LinearLayout>
 
         <Button
             android:id="@+id/btn_call"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
+            android:layout_width="27dp"
+            android:layout_height="37dp"
             android:layout_marginTop="25dp"
 
             android:layout_marginRight="20dp"
             android:background="@drawable/call"
-            android:onClick="call" />
-    </RelativeLayout>
+            android:onClick="call"
+            android:translationX="@android:dimen/thumbnail_height" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
