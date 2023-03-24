@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "first_name": "Abderrahmane",
+      "last_name": "ETTOUNANI",
+      "photo": "photo1.png",
+      "job": "Systems Architect",
+      "email": "m.alami@gmail.com",
+      "phone": "0628294375"
+    },
+    {
+      "id": 2,
+      "first_name": "Boutaina",
+      "photo": "photo2.png",
+      "last_name": "OUbella",
+      "job": "Sales Engineer",
+      "email": "s.elamrani@gmail.com",
+      "phone": "0661568712"
+    },
+    {
+      "id": 3,
+      "first_name": "Youssef",
+      "photo": "photo3.png",
+      "last_name": "ETTOUNANI",
+      "job": "Mobile Developer",
+      "email": "r.mobtassim@gmail.com",
+      "phone": "0618312546"
+    },
+    {
+      "id": 4,
+      "first_name": "Khadija",
+      "last_name": "Khaireddine",
+      "photo": "photo4.png",
+      "job": "Devops Engineer",
+      "email": "m.khalil@gmail.com",
+      "phone": "0618654532"
+    },
+    {
+      "id": 5,
+      "first_name": "Ahmed",
+      "photo": "photo5.png",
+      "last_name": "ETTOUNANI",
+      "job": "Data Engineer",
+      "email": "n.hachimi@gmail.com",
+      "phone": "0617656538"
+    },
+  {
+    "id": 6,
+    "first_name": "Oumaima",
+    "last_name": "ETTOUNANI",
+    "photo": "photo6.png",
+    "job": "Project Manager",
+    "email": "s.semlali@gmail.com",
+    "phone": "0678654459"
+  },
+  {
+    "id": 7,
+    "first_name": "Simo",
+    "last_name": "ETTOUNANI",
+    "photo": "photo7.png",
+    "job": "Project Manager",
+    "email": "s.semlali@gmail.com",
+    "phone": "0678654459"
+  }
+  ]
+
