@@ -55,7 +55,18 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
         // Set text on text view
         holder.textView.setText(data.getText());
+        holder.btDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Initialize main data
+                MainData d=dataList.get(holder.getAdapterPosition());
 
+                // Get id
+                final int sID=d.getID();
+                // Update text in database
+                database.mainDao().reset(sID);
+            }
+        });
         holder.btEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

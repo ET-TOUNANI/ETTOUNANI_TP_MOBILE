@@ -17,8 +17,8 @@ public interface MainDao {
     void insert(MainData mainData);
      // Delete query
 
-     @Delete
-     void reset(List<MainData> mainData);
+     @Query("DELETE FROM table_name WHERE  ID=:sID")
+     void reset(int sID);
      //to do
 
      // Update query
