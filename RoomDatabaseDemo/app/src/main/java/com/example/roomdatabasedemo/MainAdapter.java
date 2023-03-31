@@ -65,6 +65,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
                 final int sID=d.getID();
                 // Update text in database
                 database.mainDao().reset(sID);
+                //notify when data is updated
+                dataList.clear();
+                dataList.addAll(database.mainDao().getAll());
+                notifyDataSetChanged();
             }
         });
         holder.btEdit.setOnClickListener(new View.OnClickListener() {
@@ -147,7 +151,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
             textView=itemView.findViewById(R.id.text_view);
             btEdit=itemView.findViewById(R.id.bt_edit);
-           // btDelete=itemView.findViewById(R.id.bt_delete);
+            btDelete=itemView.findViewById(R.id.bt_delete);
         }
     }
 }
